@@ -46,5 +46,24 @@ De esta imagen vemos como en la primera ejecución, no encuentra la imagen y por
 
 ![Ejecutando imagen Docker segunda vez](./images/5.png "Ejecutando imagen Docker segunda vez")
 
+## Ejercicio 5: Comparar el tamaño de las imágenes de diferentes sistemas operativos base, Fedora, CentOS y Alpine, por ejemplo.
+
+El primer paso es instalar algunas imágenes para ello podemos usar:
+
+	sudo docker pull alpine
+	sudo docker pull ubuntu
+	sudo docker pull fedora
+	sudo docker pull centos
+	
+Una vez instaladas todas podemos ver su tamaño con tan solo listarlas. 
+
+	sudo docker images
+	
+El resultado es el siguiente:
+
+![Comparación imagenes](./images/6.png "Comparación imagenes")
+	
+
+Vemos como Alpine es la más ligera, siendo la diferencia frente a las demás muy importante. 
 
 
