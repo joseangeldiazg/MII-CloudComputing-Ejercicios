@@ -30,3 +30,21 @@ El resultado es el siguiente:
 	
 ![Máquina conectada](./images/3.png "Máquina conectada")
 	
+## Ejercicio 4: Buscar alguna demo interesante de Docker y ejecutarla localmente, o en su defecto, ejecutar la imagen anterior y ver cómo funciona y los procesos que se llevan a cabo la primera vez que se ejecuta y las siguientes ocasiones.
+
+Ejecutamos el comando:
+
+	sudo docker run --rm jjmerelo/docker-daleksay -f smiling-octopus
+
+
+La primera vez que lo ejecutamos podemos ver lo siguiente:
+
+![Ejecutando imagen Docker](./images/4.png "Ejecutando imagen Docker")
+
+De esta imagen vemos como en la primera ejecución, no encuentra la imagen y por tanto la baja de un repositorio en Docker Hub. Realiza el pull y por tanto luego la ejecuta. El la siguiente imagen podemos ver como estos pasos ya los ignora. 
+
+
+![Ejecutando imagen Docker segunda vez](./images/5.png "Ejecutando imagen Docker segunda vez")
+
+
+
